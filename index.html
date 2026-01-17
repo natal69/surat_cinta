@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How's Your Day? ❤️</title>
+    <title>Untuk Kamu ❤️</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -11,19 +11,25 @@
 
     <audio id="bgm" loop>
         <source src="assets/audio/musikku.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
     </audio>
 
     <div id="overlay">
-        <h2 id="overlay-text"></h2> <button class="btn-start" onclick="startApp()">Buka</button>
+        <h2 id="overlay-text"></h2>
+        <button class="btn-start" onclick="startApp()">Buka ❤️</button>
     </div>
 
     <div class="container" id="mainContent">
-        <h1 id="main-title"></h1> <p>Gimana kabar harimu hari ini? Ceritain ke aku yuk...</p>
+        <h1 id="main-title"></h1>
+        <p id="question-text">Gimana kabar harimu hari ini? Ceritain semuanya ke aku yuk...</p>
         
         <div class="input-area">
-            <textarea id="userStory" placeholder="Tulis ceritamu di sini..."></textarea>
-            <button class="btn-send" onclick="sendStory()">Kirim ke Aku</button>
+            <textarea id="userStory" placeholder="Tulis di sini ya..."></textarea>
+            <button class="btn-send" id="btnAction" onclick="nextQuestion()">Lanjut ❤️</button>
+        </div>
+        <div class="progress-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
     </div>
 
