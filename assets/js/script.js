@@ -32,7 +32,7 @@ function startApp() {
     setTimeout(() => {
         document.getElementById('overlay').style.display = 'none';
         document.getElementById('mainContent').classList.add('show');
-        typeEffect('main-title', 'Hi Sayang,', 100);
+        typeEffect('main-title', 'Hi, Nang...', 100);
     }, 800);
 
     setInterval(createHeart, 400);
